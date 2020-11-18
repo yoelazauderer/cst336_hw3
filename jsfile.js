@@ -9,14 +9,14 @@
                 //alert("works");
         });
         
-        $("#btn").on("submit", async function(e){
+        $("#submitBtn").on("submit", async function(e){
             
             e.preventDefault();
-            let key = 'yo636418582';
-            let name = $("#search").val();
-            console.log(name);
-            let url = `https://www.behindthename.com/api/lookup.json?name=${name}&key=${key}`;
-            alert("ok");
+            let key = `yo636418582`;
+            let enteredName = $("#search").val();
+            //console.log(name);
+            let url = `https://www.behindthename.com/api/lookup.json?name=${enteredName}&key=${key}`;
+            //alert("ok");
             let response = await fetch(url);
             let data = await response.json();
             
