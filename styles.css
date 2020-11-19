@@ -9,6 +9,7 @@ input {
     text-align: center;
     border: 1px solid #ff5757;
     border-radius: 10px;
+    width: 275px;
 }
 
 #logo {
@@ -16,7 +17,7 @@ input {
     margin: auto;
 }
 
-#nav {
+#searchBar {
     text-align: center;
 }
 
@@ -31,4 +32,19 @@ button:hover {
 footer {
     color: #ff5757;
     text-align: center;
+}
+
+#content {
+    text-align: center;
+    font-size: 26px;
+}
+
+#nameError{
+    text-align: center;
+    color: #ff5757;
+    font-size: 26px;
+}
+
+#notFound {
+    font-size: 50px;
 }
