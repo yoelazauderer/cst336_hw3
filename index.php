@@ -20,7 +20,7 @@
         
         <div id="content">
             
-            <br><br>
+            <br>
             
             <div id="nameInfo">
             Name:      <span id="name1"></span><br><br>
@@ -84,7 +84,7 @@
                 let isValidName = true;
                 let name = $("#search").val();
                 var matches = name.match(/\d+/g);
-                if (matches != null) {
+                if ((matches != null) || (name.length == 0)) {
                     isValidName = false;
                 }
             return isValidName;
